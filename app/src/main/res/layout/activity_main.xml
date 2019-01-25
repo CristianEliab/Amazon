@@ -1,10 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ff0">
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ff0"
+    android:layout_gravity="bottom|center">
 
     <ImageView
-        android:layout_width="match_parent" android:layout_marginTop="0dp"
-        android:layout_height="wrap_content" android:background="@drawable/amazon" />
+        android:id="@+id/amazon"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000"
+        android:foregroundGravity="center"
+        android:src="@drawable/amazon" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amazon"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_round_text"
+        android:gravity="center"
+        android:hint="Username"
+        android:padding="8dp"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/password"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:background="@drawable/edit_round_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/username"
+        android:textColorHint="#fff"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_redondo"
+        android:text="Log in"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="30dp"
+        android:text="Forget your password?"/>
 
 
 
