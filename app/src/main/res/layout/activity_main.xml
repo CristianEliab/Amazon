@@ -29,7 +29,7 @@
         android:gravity="center"
         android:hint="Username"
         android:padding="8dp"
-        android:textColorHint="#fff" />
+        android:textColorHint="#BA923B" />
 
     <EditText
         android:id="@+id/password"
@@ -42,7 +42,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_below="@+id/username"
-        android:textColorHint="#fff"
+        android:textColorHint="#BA923B"
         android:hint="Password"/>
 
     <Button
