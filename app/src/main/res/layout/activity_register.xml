@@ -4,51 +4,97 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_gravity="bottom|center" >
 
+
+    <ImageView
+        android:id="@+id/img_amazon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000"
+        android:foregroundGravity="center"
+        android:src="@drawable/amazon" />
+
     <TextView
         android:id="@+id/tv_reg_name"
         android:layout_width="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:foregroundGravity="center"
-        android:layout_height="wrap_content" />
+        android:layout_below="@+id/img_amazon"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textSize="18dp"
+        />
 
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/amazon"
+        android:layout_below="@+id/tv_reg_name"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="40dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/edit_round_text"
         android:gravity="center"
-        android:hint="Username"
+        android:hint="Name"
         android:padding="8dp"
         android:textColorHint="#BA923B" />
+
+    <TextView
+        android:id="@+id/tv_reg_username"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/username"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textSize="18dp"
+        />
 
     <EditText
         android:id="@+id/password"
         android:gravity="center"
-        android:layout_marginTop="10dp"
         android:padding="8dp"
         android:background="@drawable/edit_round_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_below="@+id/username"
+        android:layout_below="@+id/tv_reg_username"
         android:textColorHint="#BA923B"
         android:hint="Password"/>
 
 
+    <RadioGroup
+        android:id="@+id/rd_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:foregroundGravity="center"
+        android:layout_below="@+id/password">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salsa"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pop"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rock"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salsa"/>
+    </RadioGroup>
 
     <TextView
         android:id="@+id/forget"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/rd_group"
         android:layout_marginTop="30dp"
         android:text="Forget your password?"/>
 
