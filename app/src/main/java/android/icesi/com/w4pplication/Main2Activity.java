@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -96,16 +97,17 @@ public class Main2Activity extends AppCompatActivity
     public void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         if (requestCode == COLOR_NEGRO) {
+            Log.d( "Error 1", "Error 1");
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
-                ConstraintLayout drawer = (ConstraintLayout) findViewById(R.id.contenido_1);
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 drawer.setBackgroundColor(Color.BLACK);
             }
         }
         if (requestCode == COLOR_BLANCO) {
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
-                ConstraintLayout drawer = (ConstraintLayout) findViewById(R.id.contenido_1);
+                DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 drawer.setBackgroundColor(Color.WHITE);
             }
         }

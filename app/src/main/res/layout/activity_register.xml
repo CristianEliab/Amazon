@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:layout_height="match_parent"
+<RelativeLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#ff0"
-    android:layout_gravity="bottom|center">
+    android:layout_gravity="bottom|center" >
 
-    <ImageView
-        android:id="@+id/amazon"
+    <TextView
+        android:id="@+id/tv_reg_name"
         android:layout_width="match_parent"
-        android:layout_height="228dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="#000"
         android:foregroundGravity="center"
-        android:src="@drawable/amazon" />
+        android:layout_height="wrap_content" />
 
     <EditText
         android:id="@+id/username"
@@ -45,34 +41,27 @@
         android:textColorHint="#BA923B"
         android:hint="Password"/>
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/edit_redondo"
-        android:text="Log in"
-        android:textColor="#fff" />
+
 
     <TextView
         android:id="@+id/forget"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/login"
+        android:layout_below="@+id/password"
         android:layout_marginTop="30dp"
         android:text="Forget your password?"/>
 
-    <TextView
-        android:id="@+id/register"
-        android:gravity="center"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/forget"
-        android:layout_marginTop="30dp"
-        android:text="Register"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_redondo"
+        android:text="Log in"
+        android:textColor="#fff" />
 
 
 </RelativeLayout>
