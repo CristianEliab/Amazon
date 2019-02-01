@@ -61,7 +61,7 @@
         android:layout_marginRight="10dp"
         android:layout_below="@+id/tv_reg_username"
         android:textColorHint="#BA923B"
-        android:hint="Password"/>
+        android:hint="UserName"/>
 
 
     <RadioGroup
@@ -69,6 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
         android:foregroundGravity="center"
         android:layout_below="@+id/password">
         <RadioButton
