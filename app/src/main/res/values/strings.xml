@@ -7,4 +7,5 @@
     <string name="nav_header_subtitle">cristian.rodriguez@correo.icesi.edu.co</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Configuraciones</string>
+    <string name="title_activity_google_maps">Map</string>
 </resources>

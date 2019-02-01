@@ -81,7 +81,7 @@ public class Main2Activity extends AppCompatActivity
             Intent i = new Intent(this, Main3Activity.class);
             startActivity(i);
         } else if (id == R.id.nav_send) {
-            Intent i = new Intent(this, MainActivity.class);
+            Intent i = new Intent(this, GoogleMaps.class);
             startActivity(i);
         }
 
